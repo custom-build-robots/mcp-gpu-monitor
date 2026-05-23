@@ -18,7 +18,7 @@ A small but useful **Model Context Protocol** server that exposes NVIDIA GPU met
 
 This README sticks to the essentials. The complete story — the *why*, design decisions, step-by-step build, and the pitfalls I hit along the way lives on my blog:
 
-**→ [An MCP Server for Multi-GPU Monitoring — Step by Step with Python, pynvml and EMA Smoothing](https://ai-box.eu/en/news/an-mcp-server-for-multi-gpu-monitoring-step-by-step-with-python-pynvml-and-ema-smoothing/2354/)**
+**→ [An MCP Server for Multi-GPU Monitoring - Step by Step with Python, pynvml and EMA Smoothing](https://ai-box.eu/en/news/an-mcp-server-for-multi-gpu-monitoring-step-by-step-with-python-pynvml-and-ema-smoothing/2354/)**
 
 If you want to understand *how* and *why* this is built the way it is, head over there.
 
@@ -47,4 +47,4 @@ MIT — see [LICENSE](LICENSE).
 
 ## Author
 
-Ingmar Stapel — [ai-box.eu](https://ai-box.eu/) · author of *Roboter-Autos mit dem ESP32* (Rheinwerk Verlag).
+Ingmar Stapel - [ai-box.eu](https://ai-box.eu/) · author of *Roboter-Autos mit dem ESP32* (Rheinwerk Verlag).

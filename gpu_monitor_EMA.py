@@ -20,21 +20,20 @@ from fastmcp import FastMCP
 
 
 
-# --- EMA-Glättung ---
+# --- EMA smoothing ---
 class EMASmoother:
     """
-    Exponential Moving Average für einzelne, benannte Messreihen.
-    Pro Schlüssel (z. B. "gpu0_compute") wird ein eigener geglätteter
-    Wert gehalten.
+    Exponential Moving Average for individual, named measurement series.
+    A separate smoothed value is kept per key (e.g. "gpu0_compute").
     """
     def __init__(self, alpha: float = 0.3):
         self.alpha = alpha
         self._values: dict[str, float] = {}
     
     def update(self, key: str, raw_value: float) -> float:
-        """Trägt einen neuen Rohwert ein und gibt den geglätteten zurück."""
+        """Records a new raw value and returns the smoothed result."""
         if key not in self._values:
-            # Erster Wert für diesen Schlüssel → direkt übernehmen
+            # First value for this key → take it as-is
             self._values[key] = float(raw_value)
         else:
             self._values[key] = (
